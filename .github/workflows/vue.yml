@@ -1,0 +1,11 @@
+name: ci-cd-vue
+on:
+  push:
+    branches: [main]
+
+jobs:
+    ci-cd-vue:
+        uses: danielcosme99/devops-github-actions/.github/workflows/vue.yml@main
+        with:
+          node-version: "16"
+          #runner: "self-hosted"
